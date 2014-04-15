@@ -1,0 +1,14 @@
+{
+  "auth": {
+    "appKey":       "text",
+    "accessToken":  "text",
+    "externalId":   "text"
+  },
+  "container": {
+    "urlName": "text",
+    "urlPattern": "https://trello.com/b/%urlName"
+  },
+
+  "importGoalsInfo": "We’ll import all the open cards from the provided board.",
+  "userInvitationInfo": "To be implemented. (We’ll invite users that have an email published on their Trello account.)"
+}

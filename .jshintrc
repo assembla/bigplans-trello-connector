@@ -1,0 +1,38 @@
+{
+  "bitwise": true,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": 2,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "quotmark": true,
+  "undef": true,
+  "unused": true,
+  "globalstrict": true,
+  "trailing": true,
+  "maxparams": 3,
+  "maxdepth": 4,
+  "maxcomplexity": 4,
+  "white": false,
+  "sub": true,
+
+  "globals": {
+    "require": false,
+    "module": false,
+
+    "process": false,
+    "console": false,
+    "__dirname": false,
+    "setTimeout": false,
+
+    "jasmine": false,
+    "beforeEach": false,
+    "describe": false,
+    "xdescribe": false,
+    "it": false,
+    "xit": false,
+    "expect": false,
+    "spyOn": false
+  }
+}

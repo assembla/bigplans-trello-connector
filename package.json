@@ -1,0 +1,35 @@
+{
+  "name": "bigplans-trello-connector",
+  "version": "0.0.0",
+  "description": "The Trello connector for BigPlans.io",
+  "private": true,
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Assembla/bigplans-trello-connector.git"
+  },
+  "keywords": [
+    "bigplans",
+    "connector",
+    "trello"
+  ],
+  "author": "Assembla Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Assembla/bigplans-trello-connector/issues"
+  },
+  "homepage": "https://github.com/Assembla/bigplans-trello-connector",
+  "dependencies": {
+    "underscore": "1.6.0",
+    "bp-connector-helper": "https://github.com/Assembla/bp-connector-helper.git"
+  },
+  "devDependencies": {
+    "grunt": "0.4.2",
+    "jshint": "2.4.4",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-jasmine-node": "0.1.0"
+  }
+}
