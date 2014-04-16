@@ -1,14 +1,16 @@
 {
   "auth": {
-    "appKey":       "text",
-    "accessToken":  "text",
-    "externalId":   "text"
+    "key":    "text",
+    "token":  "text",
+    "userId": "text"
   },
+
   "container": {
-    "urlName": "text",
+    "urlName":    "text",
     "urlPattern": "https://trello.com/b/%urlName"
   },
 
+  "saveGoalsInfo": "We’ll save new goals to the Current List or to the most left List otherwise.",
   "importGoalsInfo": "We’ll import all the open cards from the provided board.",
   "userInvitationInfo": "To be implemented. (We’ll invite users that have an email published on their Trello account.)"
 }

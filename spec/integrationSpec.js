@@ -5,6 +5,10 @@ var _         = require('underscore');
 var helper    = require('./helpers/specHelper');
 var settings  = require('./requestSettings');
 
+function isError(res) {
+  return res.status !== 'success';
+}
+
 describe('connector smoke suite', function() {
   var newGoalId;
   var connService = new helper.ConnService(connector);
@@ -14,6 +18,8 @@ describe('connector smoke suite', function() {
     var params = helper.buildParams('createGoal');
 
     connService.testAction('createGoal', params, function(response) {
+      if(isError(response)) { return done(response.message); }
+
       helper.expectingAGoal(response);
 
       var goal = response.data.goal;
@@ -34,6 +40,8 @@ describe('connector smoke suite', function() {
     _.extend(params.goal, { external_id: newGoalId });
 
     connService.testAction('updateGoal', params, function(response) {
+      if(isError(response)) { return done(response.message); }
+
       helper.expectingAGoal(response);
 
       var goal = response.data.goal;
@@ -50,6 +58,8 @@ describe('connector smoke suite', function() {
     var params = helper.buildParams('getGoal', { id: newGoalId });
 
     connService.testAction('getGoal', params, function(response) {
+      if(isError(response)) { return done(response.message); }
+
       helper.expectingAGoal(response);
       done();
     });
@@ -59,6 +69,8 @@ describe('connector smoke suite', function() {
     var params = helper.buildParams('getGoals');
 
     connService.testAction('getGoals', params, function(response) {
+      if(isError(response)) { return done(response.message); }
+
       helper.expectingAGoalList(response);
       done();
     });
@@ -68,6 +80,8 @@ describe('connector smoke suite', function() {
     var params = helper.buildParams('getProjects');
 
     connService.testAction('getProjects', params, function(response) {
+      if(isError(response)) { return done(response.message); }
+
       helper.expectingAProjectList(response);
       done();
     });
@@ -77,6 +91,8 @@ describe('connector smoke suite', function() {
     var params = helper.buildParams('getUsers');
 
     connService.testAction('getUsers', params, function(response) {
+      if(isError(response)) { return done(response.message); }
+
       helper.expectingAUserList(response);
       done();
     });

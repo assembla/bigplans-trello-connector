@@ -1,20 +1,30 @@
 'use strict';
 
-var config = require('load-grunt-config');
-var path = require('path');
-
 module.exports = function(grunt) {
-  config(grunt, {
-    init: true,
-    loadGruntTasks: true,
+  grunt.initConfig({
+    pkg   : grunt.file.readJSON('package.json'),
+    jshint: {
+      files: grunt.file.readJSON('.jshint.files'),
+      options: {
+        jshintrc: '.jshintrc',
+        ignores: []
+      }
+    },
 
-    config: {
-      pkg    : require('package.json'),
-      src    : ['index.js', 'lib/**/*.js'],
-      config : ['package.json', 'Gruntfile.js', '.jshintrc'],
-      specs  : ['spec/**/*Spec.js']
+    'jasmine_node': {
+      options: {
+        projectRoot: './spec',
+        verbose: false,
+        forceExit: true,
+        captureExceptions : true
+      },
+      all: [ './spec' ]
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jasmine-node');
+
+  grunt.registerTask('test', ['jshint', 'jasmine_node']);
   grunt.registerTask('default', ['test']);
 };

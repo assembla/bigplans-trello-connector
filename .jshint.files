@@ -1,0 +1,9 @@
+[
+  "index.js",
+  "lib/**/*.js",
+  "package.json",
+  "Gruntfile.js",
+  ".jshintrc",
+  "tasks/**/*.js",
+  "spec/**/*.js"
+]

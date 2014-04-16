@@ -1,9 +1,9 @@
 {
   "auth": {
-    "appKey":       "",
-    "accessToken":  "",
-    "externalId":   "",
-    "urlName":      ""
+    "key":      "e398cc30d695dd7f4c5785cf8dd3304a",
+    "token":    "37db56aa0f4dde4bc244d4e9d7d3dedb0ead7ebed6af5b59b0c50aa070cfb462",
+    "userId":   "534e4c604607f2332ebea3a2",
+    "urlName":  "534e4c604607f2332ebea3a3"
   },
 
   "createGoal": {
