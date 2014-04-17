@@ -27,11 +27,11 @@
   "homepage": "https://github.com/Assembla/bigplans-trello-connector",
 
   "dependencies": {
+    "underscore": "1.6.0",
     "bp-connector-helper": "git+https://github.com/Assembla/bp-connector-helper.git"
   },
 
   "devDependencies": {
-    "underscore": "1.6.0",
     "grunt": "0.4.4",
     "jshint": "2.5.0",
     "grunt-cli": "0.1.13",
