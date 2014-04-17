@@ -1,5 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/Assembla/bigplans-trello-connector.png)](https://codeclimate.com/github/Assembla/bigplans-trello-connector)
-[![Build Status](https://travis-ci.org/Assembla/bigplans-trello-connector.svg)](https://travis-ci.org/Assembla/bigplans-trello-connector)
+[![Build Status](https://travis-ci.org/Assembla/bigplans-trello-connector.svg?branch=master)](https://travis-ci.org/Assembla/bigplans-trello-connector)
 ![Dependency Status](https://gemnasium.com/Assembla/bigplans-trello-connector.png)
 
 ### Synopsis
